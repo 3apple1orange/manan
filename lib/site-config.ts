@@ -253,3 +253,18 @@ export const bios = {
   long:
     "Manan Singla is an entrepreneur and author based in Mumbai and the San Francisco Bay Area, whose work spans urban mobility, municipal services, diamonds and international trade, and philosophical writing.\n\nHe is the founder of ECTO INDIA, active since February 2024 and co-founded with Vansh Gehlot. ECTO INDIA is developing an auto-rickshaw mobility platform for Tier 2 and Tier 3 Indian cities, built around local trust and driver-first economics, with trial operations across 11 cities in Uttar Pradesh, Haryana and Punjab.\n\nThrough S.S. Solutions, established in April 2025, he undertakes municipal and tender-based service work, including mechanised road sweeping in Kurukshetra, Haryana. He also works in diamonds and international trade, from Mumbai and Surat to New York, with training at HRD Antwerp, Belgium.\n\nAlongside this work, he writes. His book, Meet Me in the Backyard, published as a Kindle edition in July 2026, is a work of philosophical reflection on identity, fear and the private life of the mind. His research manuscript, Platformisation in Smaller Indian Cities, deposited on Zenodo in September 2026, examines how informal institutions, labour and trust shape the adoption of mobility platforms beyond India's metros.\n\nHe keeps a limited presence online and prefers longer work, direct conversations and time away from the feed.",
 };
+
+
+export const researchEndorsement = {
+  label: "Letter of endorsement",
+  date: "October 2026",
+  name: "Angela M. Counts",
+  role: "Former Director of Admissions, Harvard Divinity School",
+  institution: "Harvard University",
+  quote:
+    "Manan’s work offers a nuanced perspective on the relationship between technological innovation and the realities of everyday urban life.",
+  secondQuote:
+    "I am pleased to endorse his research and recommend him for academic opportunities that value independent thinking, interdisciplinary inquiry, and a thoughtful engagement with contemporary societal challenges.",
+  letterUrl: "" as string,
+  tone: "#1b2540",
+} as const;

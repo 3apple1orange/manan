@@ -8,6 +8,7 @@ import RevealSection from "@/components/RevealSection";
 import AboutLeftRail from "@/components/AboutLeftRail";
 import AboutRightRail from "@/components/AboutRightRail";
 import AboutIntro from "@/components/AboutIntro";
+import EndorsementNote from "@/components/EndorsementNote";
 
 export const metadata = buildMetadata({
   title: `About ${siteConfig.person.name} | Founder of ${siteConfig.ecto.name}`,
@@ -73,6 +74,7 @@ const pillars = [
     href: "/research",
     cta: "View research",
     website: "",
+    endorsed: true,
   },
 ];
 
@@ -119,6 +121,7 @@ export default function AboutPage() {
                   <h3 className="mt-2 font-serif text-3xl">{p.title}</h3>
                   <p className="mt-3 text-base text-muted">{p.body}</p>
                   <p className="mt-2 text-sm text-muted">{p.meta}</p>
+                  {p.endorsed && <EndorsementNote />}
                   <Link href={p.href} className="mt-4 inline-block text-sm underline">
                     {p.cta} →
                   </Link>

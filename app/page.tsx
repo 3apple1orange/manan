@@ -39,20 +39,21 @@ export default function HomePage() {
         </h1>
 
         <Reveal delay={0.7} y={14}>
-          <p className="mx-auto mt-8 max-w-xs font-serif text-base text-muted md:mt-10 md:max-w-none md:text-lg">
-            Founder of{" "}
-            <Link href="/ecto-india" className="text-ink underline decoration-line underline-offset-4 hover:decoration-ink">
-              {siteConfig.ecto.name}
-            </Link>
-            . Author of{" "}
-            <Link
-              href="/writing/meet-me-in-the-backyard"
-              className="italic text-ink underline decoration-line underline-offset-4 hover:decoration-ink"
-            >
-              {siteConfig.book.title}
-            </Link>
-            .
-          </p>
+         <p className="mx-auto mt-8 w-full text-center font-serif text-sm leading-relaxed text-muted md:whitespace-nowrap md:text-base">
+  Founder of{" "}
+  <Link href="/ecto-india" className="text-ink underline decoration-line underline-offset-4 transition-colors hover:decoration-ink">
+    {siteConfig.ecto.name}
+  </Link>
+  . Proprietor of{" "}
+  <Link href="/ss-solutions" className="text-ink underline decoration-line underline-offset-4 transition-colors hover:decoration-ink">
+    {siteConfig.ssSolutions.name}
+  </Link>
+  . Author of{" "}
+  <Link href="/writing/meet-me-in-the-backyard" className="text-ink underline decoration-line underline-offset-4 transition-colors hover:decoration-ink">
+    <em>{siteConfig.book.title}</em>
+  </Link>
+  .
+</p>
         </Reveal>
 
         {/* Mobile: the same two details, set quietly under the hero */}

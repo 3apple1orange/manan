@@ -8,6 +8,7 @@ import DrawLine from "@/components/motion/DrawLine";
 import ClipReveal from "@/components/motion/ClipReveal";
 import CopyButton from "@/components/CopyButton";
 import ResearchPreview from "@/components/ResearchPreview";
+import ResearchEndorsement from "@/components/ResearchEndorsement";
 
 export const metadata = buildMetadata({
   title: `Research and Publications | ${siteConfig.person.name}`,
@@ -62,7 +63,7 @@ export default function ResearchPage() {
           </Reveal>
         </header>
 
-        {researchPapers.map((paper) => {
+        {researchPapers.map((paper, index) => {
           const citation = citationFor(paper);
           return (
             <div key={paper.slug} className="mx-auto mt-20 max-w-6xl md:mt-28">
@@ -150,6 +151,13 @@ export default function ResearchPage() {
                   )}
                 </div>
               </article>
+
+              {/* Endorsement: full width, shown once */}
+              {index === 0 && (
+                <div className="mt-24 md:mt-32">
+                  <ResearchEndorsement />
+                </div>
+              )}
 
               {/* Key ideas */}
               {paper.keyIdeas && paper.keyIdeas.length > 0 && (
