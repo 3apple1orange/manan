@@ -33,7 +33,7 @@ export default function LogicPage() {
         </Reveal>
 
         <WordReveal
-          text="The world has enough spectators. The rest is a matter of consequence."
+          text="I have enough spectators. The rest is a matter of consequence."
           className="mx-auto max-w-3xl px-6 pt-8 text-center font-serif text-3xl leading-[1.25] md:text-[2.75rem]"
           stagger={0.06}
           highlight={["consequence"]}
