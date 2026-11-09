@@ -12,7 +12,7 @@ import { TextRoll } from "@/components/TextRoll";
 
 export const metadata = buildMetadata({
   title: `Contact | ${siteConfig.person.name}`,
-  description: `Contact ${siteConfig.person.name} for press, collaboration and general enquiries, or reach ${siteConfig.ecto.name} directly.`,
+  description: `Contact ${siteConfig.person.name} for press, collaboration and general enquiries, or reach ${siteConfig.ecto.name}, ${siteConfig.ssSolutions.name} and ${siteConfig.book.title} directly.`,
   path: "/contact",
 });
 
@@ -32,13 +32,13 @@ const routes: { label: string; note: string; email?: string; href?: string; cta?
   },
   {
     label: siteConfig.ssSolutions.name,
-    note: "Municipal and tender-based work. A dedicated address is coming soon",
-    email: siteConfig.contactEmail,
+    note: "Municipal and tender-based work",
+    email: siteConfig.ssSolutions.contactEmail,
   },
-    {
+  {
     label: siteConfig.book.title,
     note: "Author enquiries, interviews, readings and book clubs",
-    email: siteConfig.contactEmail,
+    email: siteConfig.book.contactEmail,
   },
   {
     label: "Media kit",

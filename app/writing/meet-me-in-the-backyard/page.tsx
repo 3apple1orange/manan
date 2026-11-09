@@ -152,6 +152,15 @@ export default function BookPage() {
               <div className="mt-8">
                 <BuyButton variant="light" />
               </div>
+              <p className="mt-8 text-sm text-paper/60">
+                <span className="block text-[10px] uppercase tracking-[0.25em] text-paper/40">Author enquiries</span>
+                <a
+                  href={`mailto:${book.contactEmail}`}
+                  className="mt-2 inline-block break-all font-serif text-lg text-paper underline decoration-paper/30 underline-offset-4 transition-colors hover:decoration-paper"
+                >
+                  {book.contactEmail}
+                </a>
+              </p>
             </div>
 
             <dl className="grid grid-cols-2 gap-px self-end bg-paper/15">

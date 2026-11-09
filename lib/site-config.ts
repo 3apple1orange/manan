@@ -65,6 +65,7 @@ export const siteConfig = {
     name: "S.S. Solutions",
     legalForm: "Sole Proprietorship", 
     proprietor: "Manan Singla",
+    contactEmail: "contact@thesssolutions.in",
     established: "April 2025",
     website: "https://thesssolutions.in", 
     description:
@@ -106,6 +107,7 @@ export const siteConfig = {
     format: "Kindle edition",
     datePublished: "2026-07-11",
     datePublishedLabel: "11 July 2026",
+    contactEmail: "hello@meetmeinthebackyard.com",
     pages: 458, // as supplied; confirm for the print edition
     language: "English",
     asin: "B0H8JFNH8F",
@@ -265,6 +267,8 @@ export const researchEndorsement = {
     "Manan’s work offers a nuanced perspective on the relationship between technological innovation and the realities of everyday urban life.",
   secondQuote:
     "I am pleased to endorse his research and recommend him for academic opportunities that value independent thinking, interdisciplinary inquiry, and a thoughtful engagement with contemporary societal challenges.",
-  letterUrl: "" as string,
+  letterUrl: "/documents/endorsement-letter.pdf" as string,
+  letterPreview: "/documents/letter-preview.png",
+  letterPages: 2,
   tone: "#1b2540",
 } as const;

@@ -79,13 +79,23 @@ export default function SsSolutionsPage() {
 
         <VentureSection index="04" label="Enquiries">
           <Reveal>
-            <a href={`mailto:${siteConfig.contactEmail}`} className="group inline-block break-all font-serif text-3xl md:text-5xl">
-              {siteConfig.contactEmail}
+            <a href={`mailto:${ss.contactEmail}`} className="group inline-block break-all font-serif text-3xl md:text-5xl">
+              {ss.contactEmail}
               <span className="mt-2 block h-px w-0 bg-ink transition-all duration-700 group-hover:w-full" />
             </a>
-            <p className="mt-8 text-sm text-muted">
-              A dedicated {ss.name} address will be added once its own domain is live.
-            </p>
+            {ss.website && (
+              <p className="mt-8 text-sm text-muted">
+                More on the work at{" "}
+                <a
+                  href={ss.website}
+                  target="_blank"
+                  rel="noopener"
+                  className="text-ink underline decoration-line underline-offset-4 transition-colors hover:decoration-ink"
+                >
+                  {ss.website.replace(/^https?:\/\/(www\.)?/, "")}
+                </a>
+              </p>
+            )}
           </Reveal>
         </VentureSection>
       </VenturePageFrame>

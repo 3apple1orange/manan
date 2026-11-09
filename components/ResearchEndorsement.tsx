@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 import { researchEndorsement as e, researchPapers } from "@/lib/site-config";
 
@@ -46,6 +47,7 @@ export default function ResearchEndorsement() {
       />
 
       <div className="relative px-6 py-10 sm:px-10 md:py-14 lg:px-16 lg:py-16">
+        {/* Header strip */}
         <motion.div {...fade(0.1)} className="flex items-center justify-between gap-4 border-b border-paper/15 pb-6">
           <h2 id="endorsement-title" className="text-[11px] uppercase tracking-[0.3em] text-paper/85">
             {e.label}
@@ -53,6 +55,7 @@ export default function ResearchEndorsement() {
           <span className="text-[11px] uppercase tracking-[0.3em] text-paper/50">{e.date}</span>
         </motion.div>
 
+        {/* Quote */}
         <motion.blockquote
           variants={container}
           initial="hidden"
@@ -80,6 +83,7 @@ export default function ResearchEndorsement() {
           })}
         </motion.blockquote>
 
+        {/* Who, what, closing line */}
         <motion.div
           {...fade(0.8)}
           className="mt-12 grid gap-8 border-t border-paper/15 pt-8 md:mt-16 lg:grid-cols-[1.1fr_1fr_1.3fr] lg:gap-12"
@@ -106,15 +110,46 @@ export default function ResearchEndorsement() {
           <p className="font-serif text-base italic leading-relaxed text-paper/75">“{e.secondQuote}”</p>
         </motion.div>
 
+        {/* The letter itself */}
         {e.letterUrl && (
           <motion.a
             {...fade(1)}
             href={e.letterUrl}
             target="_blank"
             rel="noopener"
-            className="mt-8 inline-block text-sm text-paper/80 underline underline-offset-4 hover:text-paper"
+            aria-label={`Open the letter of endorsement from ${e.name} (PDF, opens in a new tab)`}
+            className="group mt-12 grid items-center gap-8 rounded-2xl border border-paper/15 bg-paper/[0.04] p-6 transition-colors duration-500 hover:bg-paper/[0.08] sm:grid-cols-[150px_1fr] md:mt-14 md:p-8"
           >
-            Read the letter
+            <div className="relative mx-auto w-32 sm:w-full">
+              <div
+                aria-hidden="true"
+                className="absolute inset-0 translate-x-2 translate-y-2 rotate-3 rounded-md bg-paper/20"
+              />
+              <Image
+                src={e.letterPreview}
+                alt={`First page of the letter of endorsement from ${e.name}`}
+                width={935}
+                height={1210}
+                className="relative h-auto w-full rounded-md shadow-2xl transition-transform duration-700 group-hover:-translate-y-1 group-hover:-rotate-1"
+              />
+            </div>
+
+            <div className="text-center sm:text-left">
+              <span className="block text-[10px] uppercase tracking-[0.25em] text-paper/50">
+                The letter · {e.letterPages} pages · PDF
+              </span>
+              <span className="mt-2 block font-serif text-2xl md:text-3xl">Read the full letter</span>
+              <span className="mt-2 block text-sm text-paper/70">
+                From {e.name}, {e.date}.
+              </span>
+              <span
+                className="mt-6 inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm"
+                style={{ backgroundColor: GOLD, color: e.tone }}
+              >
+                Open letter
+                <span className="transition-transform duration-500 group-hover:translate-x-0.5 group-hover:-translate-y-0.5">↗</span>
+              </span>
+            </div>
           </motion.a>
         )}
       </div>
