@@ -5,7 +5,7 @@ export const IDS = {
   person: `${siteConfig.domain}/#person`,
   profilePage: `${siteConfig.domain}/about#profile-page`,
   ecto: `${siteConfig.ectoDomain}/#organization`,
-  ssSolutions: `${siteConfig.domain}/#ss-solutions`,
+  ssSolutions: "https://thesssolutions.in/#organization",
   book: `${siteConfig.domain}/writing/meet-me-in-the-backyard#book`,
 };
 
@@ -25,7 +25,7 @@ export function personSchema() {
     email: `mailto:${siteConfig.contactEmail}`,
     worksFor: [
       { "@type": "Organization", "@id": IDS.ecto, name: siteConfig.ecto.name, url: siteConfig.ectoDomain },
-      { "@type": "Organization", "@id": IDS.ssSolutions, name: siteConfig.ssSolutions.name },
+      { "@type": "Organization", "@id": IDS.ssSolutions, name: siteConfig.ssSolutions.name, url: "https://thesssolutions.in/" },
     ],
   };
   if (siteConfig.person.primaryPortraitUrl) {
@@ -124,6 +124,7 @@ export function ssSolutionsOrganizationSchema() {
     "@type": "Organization",
     "@id": IDS.ssSolutions,
     name: siteConfig.ssSolutions.name,
+    url: "https://thesssolutions.in/",
     description: siteConfig.ssSolutions.description,
     founder: { "@id": IDS.person },
   };
