@@ -42,7 +42,7 @@ export const siteConfig = {
     ],
     // Only verified profiles of this same person.
     sameAs: ["https://www.linkedin.com/in/manan-singla-548716271/"] as string[],
-    primaryPortraitUrl: "", // set once the final portrait has a permanent URL
+    primaryPortraitUrl: "https://www.manansingla.com/images/manan-singla-founder-ecto-india.jpeg", 
   },
 
   ecto: {
@@ -50,7 +50,7 @@ export const siteConfig = {
     description:
       "ECTO INDIA is developing an auto-rickshaw mobility platform, with trial operations across 11 cities in Uttar Pradesh, Haryana and Punjab.",
     stage: "Trial operations in 11 cities",
-    activeSince: "February 2024", // venture start, NOT an incorporation date
+    activeSince: "February 2024", // venture start
     founder: "Manan Singla",
     coFounder: "Vansh Gehlot",
     contactEmail: "contact@ectoindia.com",
@@ -80,9 +80,9 @@ export const siteConfig = {
 
   diamonds: {
     name: "Diamonds & International Trade",
-    company: "", // TO FILL: trading or company name, once the client confirms
-    role: "", // TO FILL: Manan's role, e.g. "Founder"
-    website: "", // TO FILL when there is one
+    company: "", 
+    role: "", 
+    website: "", 
     summary:
       "Sourcing, cross-border commerce and Rapaport-based pricing, from Mumbai and Surat to New York.",
     description:
