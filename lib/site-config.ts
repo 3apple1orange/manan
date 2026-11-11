@@ -275,70 +275,40 @@ export const researchEndorsement = {
 } as const;
 
 
-
-
 // ───────────── Gallery ─────────────
 // Captions describe only what is visible. Add a place or year once the client confirms it.
 
+export const galleryVideo = {
+  src: "/images/photos/manan-singla-video.mp4",
+  poster: "/images/photos/manan-singla-video-poster.jpg",
+  width: 488,
+  height: 662,
+  caption: "A short video of Manan Singla.",
+  duration: "PT27S", // 27 seconds
+  uploadDate: "2026-11-11",
+};
+
 export const galleryPhotos = [
-  {
-    src: "/images/photos/manan-singla-black-and-white-portrait-seated.jpg",
-    width: 694,
-    height: 1041,
-    caption: "Manan Singla, seated.",
-  },
-  {
-    src: "/images/photos/manan-singla-hrd-antwerp-diamond-grading-diploma.jpg",
-    width: 960,
-    height: 1280,
-    caption: "Manan Singla receiving his HRD Antwerp Diamond Grading Diploma.",
-  },
-  {
-    src: "/images/photos/manan-singla-evening-portrait-white-shirt.jpg",
-    width: 1040,
-    height: 693,
-    caption: "Manan Singla in a white shirt, in the evening.",
-  },
-  {
-    src: "/images/photos/manan-singla-black-and-white-portrait-tie.jpg",
-    width: 694,
-    height: 1041,
-    caption: "Manan Singla in a jacket and tie.",
-  },
-  {
-    src: "/images/photos/manan-singla-hrd-antwerp-diploma-ceremony.jpg",
-    width: 960,
-    height: 1280,
-    caption: "Manan Singla at the HRD Antwerp diploma ceremony.",
-  },
-  {
-    src: "/images/photos/manan-singla-black-and-white-profile.jpg",
-    width: 894,
-    height: 854,
-    caption: "Manan Singla in profile.",
-  },
-  {
-    src: "/images/photos/manan-singla-black-and-white-long-coat.jpg",
-    width: 694,
-    height: 1041,
-    caption: "Manan Singla in a long coat, at night.",
-  },
-  {
-    src: "/images/photos/manan-singla-portrait-glasses.jpg",
-    width: 960,
-    height: 1280,
-    caption: "Manan Singla, close-up.",
-  },
-  {
-    src: "/images/photos/manan-singla-night-portrait-brown-shirt.jpg",
-    width: 694,
-    height: 1041,
-    caption: "Manan Singla in a brown shirt, at night.",
-  },
-  {
-    src: "/images/photos/manan-singla-black-and-white-portrait-palms.jpg",
-    width: 853,
-    height: 1280,
-    caption: "Manan Singla among palm leaves.",
-  },
+  { src: "/images/photos/manan-singla-sunglasses-denim-shirt.jpg", width: 853, height: 1280, caption: "Manan Singla in sunglasses and a denim shirt." },
+  { src: "/images/photos/manan-singla-black-and-white-portrait-seated.jpg", width: 694, height: 1041, caption: "Manan Singla, seated." },
+  { src: "/images/photos/manan-singla-sunglasses-black-shirt.jpg", width: 853, height: 1280, caption: "Manan Singla in sunglasses and a black shirt." },
+  { src: "/images/photos/manan-singla-black-and-white-sofa.jpg", width: 1600, height: 1066, caption: "Manan Singla, seated on a sofa." },
+  { src: "/images/photos/manan-singla-hrd-antwerp-diamond-grading-diploma.jpg", width: 960, height: 1280, caption: "Manan Singla receiving his HRD Antwerp Diamond Grading Diploma." },
+  { src: "/images/photos/manan-singla-black-and-white-painting.jpg", width: 853, height: 1280, caption: "Manan Singla in front of a painting." },
+  { src: "/images/photos/manan-singla-evening-portrait-white-shirt.jpg", width: 1040, height: 693, caption: "Manan Singla in a white shirt, in the evening." },
+  { src: "/images/photos/manan-singla-black-and-white-coat-tie.jpg", width: 853, height: 1280, caption: "Manan Singla in a coat and tie, against a wall." },
+  { src: "/images/photos/manan-singla-glasses-beige-sweater.jpg", width: 960, height: 1280, caption: "Manan Singla in glasses and a beige sweater." },
+  { src: "/images/photos/manan-singla-black-and-white-portrait-tie.jpg", width: 694, height: 1041, caption: "Manan Singla in a jacket and tie." },
+  { src: "/images/photos/manan-singla-black-and-white-smiling.jpg", width: 853, height: 1280, caption: "Manan Singla smiling, in a coat and tie." },
+  { src: "/images/photos/manan-singla-hrd-antwerp-diploma-ceremony.jpg", width: 960, height: 1280, caption: "Manan Singla at the HRD Antwerp diploma ceremony." },
+  { src: "/images/photos/manan-singla-black-and-white-street-night.jpg", width: 853, height: 1280, caption: "Manan Singla holding his glasses, on a street at night." },
+  { src: "/images/photos/manan-singla-black-and-white-profile.jpg", width: 894, height: 854, caption: "Manan Singla in profile." },
+  { src: "/images/photos/manan-singla-black-and-white-coat-tie-portrait.jpg", width: 853, height: 1280, caption: "Manan Singla in a coat and tie." },
+  { src: "/images/photos/manan-singla-night-portrait-brown-shirt.jpg", width: 694, height: 1041, caption: "Manan Singla in a brown shirt, at night." },
+  { src: "/images/photos/manan-singla-black-and-white-railing.jpg", width: 853, height: 1280, caption: "Manan Singla in a long coat, beside a railing." },
+  { src: "/images/photos/manan-singla-portrait-glasses.jpg", width: 960, height: 1280, caption: "Manan Singla, close-up." },
+  { src: "/images/photos/manan-singla-black-and-white-long-coat.jpg", width: 694, height: 1041, caption: "Manan Singla in a long coat, at night." },
+  { src: "/images/photos/manan-singla-black-and-white-sunglasses-palms.jpg", width: 853, height: 1280, caption: "Manan Singla in sunglasses, among palm trees." },
+  { src: "/images/photos/manan-singla-black-and-white-portrait-palms.jpg", width: 853, height: 1280, caption: "Manan Singla among palm leaves." },
 ];
+
