@@ -19,6 +19,7 @@ const routes = [
   "/diamonds",
   "/privacy",
   "/terms",
+  "/gallery"
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

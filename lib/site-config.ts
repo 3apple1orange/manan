@@ -130,6 +130,7 @@ export const siteConfig = {
     { label: "Ventures", href: "/ventures" },
     { label: "Writing", href: "/writing/meet-me-in-the-backyard" },
     { label: "Research", href: "/research" },
+    { label: "Gallery", href: "/gallery" },
     { label: "Contact", href: "/contact" },
   ],
 
@@ -272,3 +273,72 @@ export const researchEndorsement = {
   letterPages: 2,
   tone: "#1b2540",
 } as const;
+
+
+
+
+// ───────────── Gallery ─────────────
+// Captions describe only what is visible. Add a place or year once the client confirms it.
+
+export const galleryPhotos = [
+  {
+    src: "/images/photos/manan-singla-black-and-white-portrait-seated.jpg",
+    width: 694,
+    height: 1041,
+    caption: "Manan Singla, seated.",
+  },
+  {
+    src: "/images/photos/manan-singla-hrd-antwerp-diamond-grading-diploma.jpg",
+    width: 960,
+    height: 1280,
+    caption: "Manan Singla receiving his HRD Antwerp Diamond Grading Diploma.",
+  },
+  {
+    src: "/images/photos/manan-singla-evening-portrait-white-shirt.jpg",
+    width: 1040,
+    height: 693,
+    caption: "Manan Singla in a white shirt, in the evening.",
+  },
+  {
+    src: "/images/photos/manan-singla-black-and-white-portrait-tie.jpg",
+    width: 694,
+    height: 1041,
+    caption: "Manan Singla in a jacket and tie.",
+  },
+  {
+    src: "/images/photos/manan-singla-hrd-antwerp-diploma-ceremony.jpg",
+    width: 960,
+    height: 1280,
+    caption: "Manan Singla at the HRD Antwerp diploma ceremony.",
+  },
+  {
+    src: "/images/photos/manan-singla-black-and-white-profile.jpg",
+    width: 894,
+    height: 854,
+    caption: "Manan Singla in profile.",
+  },
+  {
+    src: "/images/photos/manan-singla-black-and-white-long-coat.jpg",
+    width: 694,
+    height: 1041,
+    caption: "Manan Singla in a long coat, at night.",
+  },
+  {
+    src: "/images/photos/manan-singla-portrait-glasses.jpg",
+    width: 960,
+    height: 1280,
+    caption: "Manan Singla, close-up.",
+  },
+  {
+    src: "/images/photos/manan-singla-night-portrait-brown-shirt.jpg",
+    width: 694,
+    height: 1041,
+    caption: "Manan Singla in a brown shirt, at night.",
+  },
+  {
+    src: "/images/photos/manan-singla-black-and-white-portrait-palms.jpg",
+    width: 853,
+    height: 1280,
+    caption: "Manan Singla among palm leaves.",
+  },
+];
